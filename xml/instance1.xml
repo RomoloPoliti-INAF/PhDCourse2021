@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <utenti 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="schemaNew2.xsd">
+        <utente anni="20">
+            <nome>nome0</nome>
+            <cognome>cognome0</cognome>
+            <indirizzo>indirizzo0</indirizzo>
+        </utente>
+        <utente  anni="30">
+            <nome>nome2</nome>
+            <cognome>cognome2</cognome>
+            <indirizzo>indirizzo2</indirizzo>
+        </utente>
+    </utenti>

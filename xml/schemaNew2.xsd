@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+  <xs:element name="utenti">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="utente"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="utente">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nome"/>
+        <xs:element ref="cognome"/>
+        <xs:element ref="indirizzo"/>
+      </xs:sequence>
+      <xs:attribute name="anni" use="required" type="xs:integer"/>
+    </xs:complexType>
+  </xs:element>
+  
+  <xs:element name="nome" type="xs:string"/>
+  <xs:element name="cognome" type="xs:string"/>
+  <xs:element name="indirizzo" type="xs:string"/>
+</xs:schema>

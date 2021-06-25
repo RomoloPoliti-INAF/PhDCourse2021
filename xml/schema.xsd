@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="qualified" elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="server">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="utenti">
+
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="utente" type="utente" minOccurs="0"
+                                maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+
+                </xs:element>
+                <xs:element name="exUtenti">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="uteneteDisabilito" type="utente_disabilitato"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="utente">
+        <xs:sequence>
+            <xs:element type="xs:string" name="nome"/>
+            <xs:element type="xs:string" name="cognome"/>
+            <xs:element type="xs:string" name="indirizzo"/>
+        </xs:sequence>
+        <xs:attribute type="xs:integer" name="anni" use="optional"/>
+    </xs:complexType>
+
+    <xs:complexType name="utente_disabilitato">
+        <xs:complexContent>
+            <xs:extension base="utente">
+                <xs:sequence>
+                    <xs:element name="dataDiasbilitazione" type="xs:date"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+</xs:schema>
