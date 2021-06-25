@@ -1,0 +1,5 @@
+Questo è un file di prova
+linea 2
+linea 3
+linea 4
+ultima linea
