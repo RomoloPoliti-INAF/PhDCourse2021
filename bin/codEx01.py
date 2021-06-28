@@ -2,3 +2,4 @@
 
 var = input("Inserisci il tuo nome: ")
 print(f"Ciao {var}")
+print("!!!!")
