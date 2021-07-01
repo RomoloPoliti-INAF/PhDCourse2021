@@ -19,7 +19,7 @@ def logInit(logName, debug = False):
     return a1  # logging
 
 def main(file):
-    logger = logInit('myLog.log')
+    logger = logInit('myLog.log',True)
     logger.info("Inizia il programma")
     logger.debug(f"leggo il file {file}")
     df= pd.read_csv(file)
@@ -29,6 +29,6 @@ def main(file):
 if __name__ == '__main__':
     parser=argparse.ArgumentParser(prog="codEx06", description="Software fo the test of parameters")
     parser.add_argument('-v','--version',action='version',help="Show the software version", version=__version__)
-    parser.add_argument('-f', '--file', metavar="NAME",type=str,help="filename to print", default='../data/testData01.csv')
+    parser.add_argument('-f', '--file', metavar="FILE",type=str,help="filename to print", default='../data/testData01.csv')
     args=parser.parse_args()
     main(args.file)
