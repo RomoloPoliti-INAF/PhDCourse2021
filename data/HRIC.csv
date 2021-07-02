@@ -1,0 +1,3 @@
+ID,TcName,SSC,StartTime,StopTime,Duration,Busy,TcMode,RepetitionRaw,Repetition,acqNum,Windowing,Images
+1,ZSS17102,1859,2021-06-14T19:05:31.000000Z,2021-06-14T19:35:51.000000Z,30 minutes and 20 seconds,0.0,Continuous,300,1.5,1213,1,1213
+2,ZSS17102,1866,2021-06-14T19:56:03.000000Z,2021-06-14T20:42:26.000000Z,46 minutes and 23 seconds,0.0,Continuous,201,1.0050000000000001,2769,1,2769
